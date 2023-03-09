@@ -1,0 +1,20 @@
+import streamlit as st
+import datetime
+st.title('RJ COLLEGE')
+st.header("MASTER'S PROGRAMME APPLICATION")
+a=st.text_input('Enter your Name:')
+b=st.text_input('Enter your fathers Name:')
+c=st.text_input('Enter your Mothers Name:')
+d=st.radio('Gender:',("Male","Female","Trans","others"))
+e=st.date_input("Date of birth:",datetime.date(1995,1,1))
+f=st.text_input("Enter your EMAIL ID")
+g=st.text_input("Enter your contact no")
+st.write("QUALIFICATIONS:")
+op_1=st.checkbox("ssc")
+op_1=st.checkbox("hsc")
+op_1=st.checkbox("Bsc")
+op_1=st.checkbox("Msc")
+op_1=st.checkbox("PhD")
+st.text_area("Write SOP",max_chars=250)
+if st.button("Submit Your Application"):
+    st.text("YOUR APPLICATION IS SUBMITTED!")
